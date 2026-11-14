@@ -1,0 +1,6 @@
+{
+  "name": "AetherLift - Strength & Workout Tracker",
+  "description": "Advanced workout logger, multi-week adherence tracker, muscle-targeted plans, exercise form library, PR records, body metrics, and trainer export reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
