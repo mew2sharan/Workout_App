@@ -1,4 +1,5 @@
 import { GuidedProgram } from '../types/workout';
+import { getAssetImage } from '../utils/assetImages';
 
 export const GUIDED_PROGRAMS: GuidedProgram[] = [
   {
@@ -9,7 +10,7 @@ export const GUIDED_PROGRAMS: GuidedProgram[] = [
     durationWeeks: 6,
     daysPerWeek: 3,
     description: 'Master the core barbell and dumbbell lifts with systematic linear progression, rapid strength gains, and tendon conditioning.',
-    imageUrl: '/src/assets/images/exercise_barbell_squat_form_1794312109578.jpg',
+    imageUrl: getAssetImage('exercise_barbell_squat_form_1794312109578.jpg'),
     overview: [
       'Focuses strictly on compound multi-joint movements for maximum neuromuscular adaptation.',
       'Linear progression scheme: add 2.5 kg to upper lifts and 5 kg to lower lifts weekly.',
@@ -225,7 +226,7 @@ export const GUIDED_PROGRAMS: GuidedProgram[] = [
     durationWeeks: 8,
     daysPerWeek: 4,
     description: 'High-density strength pairings, paired antagonist supersets, and targeted conditioning to preserve lean muscle while maximizing caloric expenditure.',
-    imageUrl: '/src/assets/images/exercise_bench_press_form_1794312107723.jpg',
+    imageUrl: getAssetImage('exercise_bench_press_form_1794312107723.jpg'),
     overview: [
       'Preserves high mechanical tension with heavy compound work to prevent muscle loss in a deficit.',
       'Antagonist supersets maintain elevated cardiac output and EPOC (afterburn effect).',
@@ -459,7 +460,7 @@ export const GUIDED_PROGRAMS: GuidedProgram[] = [
     durationWeeks: 12,
     daysPerWeek: 5,
     description: 'The definitive hybrid program integrating endurance mileage with strength armor to prevent IT band friction, runner knee, and posterior chain collapse.',
-    imageUrl: '/src/assets/images/marathon_running_conditioning_1794312209504.jpg',
+    imageUrl: getAssetImage('marathon_running_conditioning_1794312209504.jpg'),
     overview: [
       'Balances running performance with bulletproofing resistance training.',
       'Protects knee stability, ankle dorsiflexion, hip abductors, and core rotational control.',

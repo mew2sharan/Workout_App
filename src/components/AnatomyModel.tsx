@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MuscleGroup } from '../types/workout';
 import { MUSCLE_GROUPS } from '../data/exercises';
+import { getAssetImage } from '../utils/assetImages';
 import { Target, Layers, Info } from 'lucide-react';
 
 interface AnatomyModelProps {
@@ -79,7 +80,7 @@ export const AnatomyModel: React.FC<AnatomyModelProps> = ({
         <div className="lg:col-span-6 relative bg-slate-950/70 border border-slate-800/80 rounded-xl p-4 flex flex-col items-center justify-center min-h-[300px]">
           <div className="relative w-full max-w-[420px] aspect-[4/3] rounded-lg overflow-hidden border border-slate-800 group shadow-inner">
             <img
-              src="/src/assets/images/anatomy_muscles_chart_1794312109129.jpg"
+              src={getAssetImage('anatomy_muscles_chart_1794312109129.jpg')}
               alt="Anatomical muscle chart illustration"
               className="w-full h-full object-cover object-center filter saturate-110"
               referrerPolicy="no-referrer"
@@ -217,7 +218,7 @@ export const AnatomyModel: React.FC<AnatomyModelProps> = ({
             </div>
             <div className="mt-4 rounded-xl overflow-hidden border border-slate-800">
               <img
-                src="/src/assets/images/anatomy_muscles_chart_1794312109129.jpg"
+                src={getAssetImage('anatomy_muscles_chart_1794312109129.jpg')}
                 alt="Detailed Muscular System Anatomy Chart"
                 className="w-full h-auto object-contain"
                 referrerPolicy="no-referrer"

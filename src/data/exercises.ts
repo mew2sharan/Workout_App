@@ -1,6 +1,7 @@
 import { Exercise, MuscleGroup } from '../types/workout';
+import { getAssetImage } from '../utils/assetImages';
 
-export const EXERCISE_LIBRARY: Exercise[] = [
+const RAW_EXERCISE_LIBRARY: Exercise[] = [
   {
     id: 'barbell-bench-press',
     name: 'Barbell Flat Bench Press',
@@ -423,6 +424,11 @@ export const EXERCISE_LIBRARY: Exercise[] = [
     image: '/src/assets/images/plank_hold_core_1794340489164.jpg'
   }
 ];
+
+export const EXERCISE_LIBRARY: Exercise[] = RAW_EXERCISE_LIBRARY.map((exercise) => ({
+  ...exercise,
+  image: exercise.image ? getAssetImage(exercise.image) : undefined
+}));
 
 export const MUSCLE_GROUPS: MuscleGroup[] = [
   'Chest',
